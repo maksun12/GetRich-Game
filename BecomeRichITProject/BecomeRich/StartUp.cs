@@ -11,7 +11,11 @@ namespace BecomeRich
     {
         static void Main(string[] args)
         {
-            ConsoleControler add = new ConsoleControler();
+            //ConsoleControler add = new ConsoleControler();
+
+            BecomeRichContext context = new BecomeRichContext();
+            Player player = context.Players.FirstOrDefault();
+            Play play = new Play(context,player);
         }
     }
 }

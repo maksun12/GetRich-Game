@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BecomeRich.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,14 @@ namespace BecomeRich.Controllers
 {
     public class Play
     {
-
+        private static InOutConsole inOut = new InOutConsole();
         private BecomeRichContext context;
         private Player player;
         public Play(BecomeRichContext context, Player player)
         { 
             this.context = context;
             this.player = player;
+            Start();
         }
 
        public void Start()
@@ -23,7 +25,7 @@ namespace BecomeRich.Controllers
             for (int i = 1; i <= 15; i++)
             {
                 var question=GetQuestion(i);
-                
+                inOut.PrintQuestionInfo(question);
                 Console.Write("Въведи отговор:");
                 string answer = Console.ReadLine();
                 

@@ -171,7 +171,7 @@ namespace BecomeRich.Controllers
         }
         public void PrintQuestions()
         {
-            inOut.PrintQuestionInfo(read.QuestionList());
+            inOut.PrintQuestionsInfo(read.QuestionList());
         }
     }
 }
