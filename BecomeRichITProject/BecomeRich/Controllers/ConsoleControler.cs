@@ -73,7 +73,7 @@ namespace BecomeRich.Controllers
                         PrintTowns();
                         break;
                     case "3":
-                        return;
+                        PrintQuestions();
                         break;
                     case "4":
                         return;
@@ -168,6 +168,10 @@ namespace BecomeRich.Controllers
         public void PrintTowns()
         {
             inOut.PrintTownsInfo(read.TownList());
+        }
+        public void PrintQuestions()
+        {
+            inOut.PrintQuestionInfo(read.QuestionList());
         }
     }
 }

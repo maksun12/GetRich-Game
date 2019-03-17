@@ -8,6 +8,10 @@ namespace BecomeRich.Views
 {
     class InOutConsole
     {
+        public void Line(char c,int length)
+        {
+            Console.WriteLine(new string(c,length));
+        }
         public string ReadCountryName()
         {
             Console.Write("Въведи име на държава: ");
@@ -81,6 +85,27 @@ namespace BecomeRich.Views
             {
                 Console.WriteLine($"{t.Id,-4}{t.Name,-15}{t.Country.Name,-15}");
             }
+        }
+        public void PrintQuestionsInfo(List<Question> questions)
+        {
+            
+            foreach (var q in questions)
+            {
+                PrintQuestionInfo(q);
+                
+            }
+        }
+        public void PrintQuestionInfo(Question q)
+        {
+            Line('_', Console.BufferWidth);
+            Console.WriteLine($"Id: {q.Id}");
+            Console.WriteLine($"Question: {q.Question1}");
+            Console.WriteLine($"Answear: {q.A}");
+            Console.WriteLine($"Answear: {q.B}");
+            Console.WriteLine($"Answear: {q.C}");
+            Console.WriteLine($"Answear: {q.D}");
+            Console.WriteLine($"Correct answear: {q.Answear}");
+            Console.WriteLine($"Category:{q.Category.QuestionCategory}");
         }
         public void PrintMessage(string message)
         {

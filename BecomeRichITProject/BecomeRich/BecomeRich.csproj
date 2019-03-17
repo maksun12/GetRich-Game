@@ -55,6 +55,7 @@
     <Compile Include="Controllers\ConsoleControler.cs" />
     <Compile Include="Controllers\Find.cs" />
     <Compile Include="Controllers\InsertController.cs" />
+    <Compile Include="Controllers\Play.cs" />
     <Compile Include="Controllers\ReadController.cs" />
     <Compile Include="Models\BecomeRichContext.cs" />
     <Compile Include="Models\Category.cs" />

@@ -21,5 +21,9 @@ namespace BecomeRich.Controllers
         {
             return context.Towns.OrderBy(t => t.Name).ToList();
         }
+        public List<Question> QuestionList()
+        {
+            return context.Questions.OrderBy(q => q.CategoryId).ToList();
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace BecomeRich.Views
 {
     class MessegeApp
     {
+        
         public string MessegeInsertCountryTrue(string countryName)
         {
             string message = $"{countryName} е добавена успешно в таблицата с държави!";
