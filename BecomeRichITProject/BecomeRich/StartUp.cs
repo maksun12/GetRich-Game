@@ -1,4 +1,5 @@
 ﻿using BecomeRich.Controllers;
+using BecomeRich.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,8 @@ namespace BecomeRich
         {
             //ConsoleControler add = new ConsoleControler();
 
-            BecomeRichContext context = new BecomeRichContext();
-            Player player = context.Players.FirstOrDefault();
-            Play play = new Play(context,player);
+           
+            ConsolePlay play = new ConsolePlay();
         }
     }
 }

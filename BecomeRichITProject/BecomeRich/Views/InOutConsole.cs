@@ -107,6 +107,16 @@ namespace BecomeRich.Views
             Console.WriteLine($"Correct answear: {q.Answear}");
             Console.WriteLine($"Category:{q.Category.QuestionCategory}");
         }
+        public void PrintPlayQuestions(Question q,int qNumber)
+        {
+            Line('_', Console.BufferWidth);
+            
+            Console.WriteLine($"Question {qNumber}: {q.Question1}");
+            Console.WriteLine($"Answear: {q.A}");
+            Console.WriteLine($"Answear: {q.B}");
+            Console.WriteLine($"Answear: {q.C}");
+            Console.WriteLine($"Answear: {q.D}");
+        }
         public void PrintMessage(string message)
         {
             Console.WriteLine(message);
