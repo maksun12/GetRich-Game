@@ -117,6 +117,20 @@ namespace BecomeRich.Views
             Console.WriteLine($"Answear: {q.C}");
             Console.WriteLine($"Answear: {q.D}");
         }
+        public void PrintPlayersInfo(List<Player> players)
+        {
+            Console.WriteLine($"{"ID",-4}{"Player name",-25}{"Age",-4}{"Home Town",-20}{"Friend",-20}");
+            Line('_', Console.BufferWidth);
+            foreach (var p in players)
+            {
+                Console.WriteLine($"{p.Id,-4}{p.Name,-25}{p.Age,-4}{p.Town.Name,-20}{p.Friend.Name,-20}");
+                Line('_', Console.BufferWidth);
+
+            }
+            Console.WriteLine();
+
+        }
+
         public void PrintMessage(string message)
         {
             Console.WriteLine(message);

@@ -12,10 +12,10 @@ namespace BecomeRich
     {
         static void Main(string[] args)
         {
-            //ConsoleControler add = new ConsoleControler();
+            ConsoleControler add = new ConsoleControler();
 
            
-            ConsolePlay play = new ConsolePlay();
+            //ConsolePlay play = new ConsolePlay();
         }
     }
 }
