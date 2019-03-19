@@ -28,6 +28,9 @@ namespace BecomeRich.Controllers
                     case "Read":
                         Read();
                         break;
+                    case "Play":
+                        ConsolePlay play = new ConsolePlay();
+                        break;
                     default: return;
                         //break;
 
