@@ -130,6 +130,20 @@ namespace BecomeRich.Views
             Console.WriteLine();
 
         }
+        public void PrintFriendsInfo(List<Friend> friends)
+        {
+            Console.WriteLine($"{"ID",-4}{"Friend name",-25}{"Age",-4}{"Home Town",-20}");
+            Line('_', Console.BufferWidth);
+            foreach (var f in friends)
+            {
+                Console.WriteLine($"{f.Id,-4}{f.Name,-25}{f.Age,-4}{f.Town.Name,-20}");
+                Line('_', Console.BufferWidth);
+
+            }
+            Console.WriteLine();
+
+        }
+
 
         public void PrintMessage(string message)
         {

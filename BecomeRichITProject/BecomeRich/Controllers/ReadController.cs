@@ -29,5 +29,9 @@ namespace BecomeRich.Controllers
         {
             return context.Players.OrderBy(p => p.Name).ToList();
         }
+        public List<Friend> FriendsList()
+        {
+            return context.Friends.OrderBy(f => f.Name).ToList();
+        }
     }
 }

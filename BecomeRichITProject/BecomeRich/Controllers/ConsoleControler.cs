@@ -79,7 +79,7 @@ namespace BecomeRich.Controllers
                         PrintPlayers();
                         break;
                     case "5":
-                        return;
+                        PrintFriends();
                         break;
                     default: return;
                         //break;
@@ -176,6 +176,10 @@ namespace BecomeRich.Controllers
         public void PrintPlayers()
         {
             inOut.PrintPlayersInfo(read.PlayerList());
+        }
+        public void PrintFriends()
+        {
+            inOut.PrintFriendsInfo(read.FriendsList());
         }
     }
 }
