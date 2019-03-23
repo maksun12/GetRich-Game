@@ -1,10 +1,12 @@
 ﻿using BecomeRich.Controllers;
+using BecomeRich.Forms;
 using BecomeRich.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BecomeRich
 {
@@ -12,10 +14,7 @@ namespace BecomeRich
     {
         static void Main(string[] args)
         {
-            ConsoleControler add = new ConsoleControler();
-
-           
-            //ConsolePlay play = new ConsolePlay();
+            Application.Run(new InsertCountryForm());
         }
     }
 }

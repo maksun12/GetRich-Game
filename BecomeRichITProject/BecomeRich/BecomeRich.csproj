@@ -65,6 +65,12 @@
     <Compile Include="Forms\InsertCountryForm.Designer.cs">
       <DependentUpon>InsertCountryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayForm.Designer.cs">
+      <DependentUpon>PlayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\BecomeRichContext.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Country.cs" />
@@ -86,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\InsertCountryForm.resx">
       <DependentUpon>InsertCountryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayForm.resx">
+      <DependentUpon>PlayForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
