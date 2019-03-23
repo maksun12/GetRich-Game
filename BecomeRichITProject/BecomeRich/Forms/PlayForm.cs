@@ -42,7 +42,7 @@ namespace BecomeRich.Forms
 
             question = play.GetQuestion(i, questions);
             questions.Remove(question);
-            label1.Text = question.Question1;
+           textBox1.Text = question.Question1;
             radioButton1.Text = question.A;
             radioButton2.Text = question.B;
             radioButton3.Text = question.C;
