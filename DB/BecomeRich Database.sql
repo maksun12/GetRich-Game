@@ -1,4 +1,4 @@
-
+drop database BecomeRich;
 create database BecomeRich;
 
 use BecomeRich;
