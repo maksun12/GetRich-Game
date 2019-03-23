@@ -39,7 +39,7 @@ namespace BecomeRich.Controllers
                 questions = questions.Where(q => q.CategoryId == 2).ToList();
             }
             Random random = new Random();
-            int questionNumber = random.Next(1, questions.Count - 1);
+            int questionNumber = random.Next(0, questions.Count - 1);
             Question question = questions[questionNumber];
             return question;
         }

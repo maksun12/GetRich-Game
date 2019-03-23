@@ -14,7 +14,8 @@ namespace BecomeRich
     {
         static void Main(string[] args)
         {
-            Application.Run(new InsertCountryForm());
+            Application.EnableVisualStyles();
+            Application.Run(new PlayForm());
         }
     }
 }
