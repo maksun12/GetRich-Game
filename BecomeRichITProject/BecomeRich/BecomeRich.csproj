@@ -59,6 +59,12 @@
     <Compile Include="Controllers\InsertController.cs" />
     <Compile Include="Controllers\PlayController.cs" />
     <Compile Include="Controllers\ReadController.cs" />
+    <Compile Include="Forms\InsertCountryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertCountryForm.Designer.cs">
+      <DependentUpon>InsertCountryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\BecomeRichContext.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Country.cs" />
@@ -76,6 +82,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\InsertCountryForm.resx">
+      <DependentUpon>InsertCountryForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
