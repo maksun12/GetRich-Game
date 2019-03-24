@@ -218,36 +218,56 @@ namespace BecomeRich.Forms
                     label6.ForeColor = Color.Orange;
                     break;
                 case 7:
-                    label1.ForeColor = Color.Orange;
+                    label7.ForeColor = Color.Orange;
                     break;
                 case 8:
-                    label2.ForeColor = Color.Orange;
+                    label8.ForeColor = Color.Orange;
                     break;
                 case 9:
-                    label3.ForeColor = Color.Orange;
+                    label9.ForeColor = Color.Orange;
                     break;
                 case 10:
-                    label4.ForeColor = Color.Orange;
+                    label10.ForeColor = Color.Orange;
                     break;
                 case 11:
-                    label5.ForeColor = Color.Orange;
+                    label11.ForeColor = Color.Orange;
                     break;
                 case 12:
-                    label6.ForeColor = Color.Orange;
+                    label12.ForeColor = Color.Orange;
                     break;
                 case 13:
-                    label4.ForeColor = Color.Orange;
+                    label13.ForeColor = Color.Orange;
                     break;
                 case 14:
-                    label5.ForeColor = Color.Orange;
+                    label14.ForeColor = Color.Orange;
                     break;
                 case 15:
-                    label6.ForeColor = Color.Orange;
+                    label15.ForeColor = Color.Orange;
                     break;
             }
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
