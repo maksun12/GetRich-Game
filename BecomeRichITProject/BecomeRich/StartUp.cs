@@ -15,7 +15,7 @@ namespace BecomeRich
         static void Main(string[] args)
         {
             Application.EnableVisualStyles();
-            Application.Run(new InsertFriendForm());
+            Application.Run(new PlayForm());
         }
     }
 }
