@@ -39,7 +39,9 @@ namespace BecomeRich.Views
             string message = $"Въпросът не е добавен успешно";
             return message;
         }
-        public string MessegeInsertPlayerTrue(string playerName,int playerAge,string townName,string countryName,int playerFriendId)
+  
+        
+        public string MessegeInsertPlayerTrue(string playerName, int playerAge, string townName, string countryName, int playerFriendId)
         {
             string message = $"Играчът е добавен успешно";
             return message;
