@@ -14,17 +14,19 @@ namespace BecomeRich.Forms
 {
     public partial class InsertCountryForm : Form
     {
-        public object InsertControler { get; private set; }
-        public InsertCountryForm()
+        InsertController insert ;
+        MessegeApp message ;
+        public InsertCountryForm(InsertController insert, MessegeApp message )
         {
-
             InitializeComponent();
+            this.insert = insert;
+            this.message = message;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            InsertController insert = new InsertController();
-            MessegeApp message = new MessegeApp();
+            
             string countryName = textBox1.Text;
             bool isAdd = false;
             if (countryName != string.Empty)
@@ -44,6 +46,11 @@ namespace BecomeRich.Forms
             {
                 MessageBox.Show("Въведи име на държава!");
             }
+
+        }
+
+        private void InsertCountryForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

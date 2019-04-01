@@ -8,8 +8,13 @@ namespace BecomeRich.Controllers
 {
  public   class InsertController
     {
-        private static BecomeRichContext context = new BecomeRichContext();
-        private static Find find = new Find();
+        private  BecomeRichContext context ;
+        private  ReadController find ;
+        public InsertController(BecomeRichContext context, ReadController read)
+        {
+            this.context = context;
+            this.find = read;
+        }
         public bool InsertIntoCountries(string countryName)
         {
             if (find.FindCountry(countryName) == null)

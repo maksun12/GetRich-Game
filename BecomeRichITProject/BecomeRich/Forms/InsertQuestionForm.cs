@@ -14,9 +14,13 @@ namespace BecomeRich.Forms
 {
     public partial class InsertQuestionForm : Form
     {
-        public InsertQuestionForm()
+        private InsertController insert;
+        private MessegeApp message;
+        public InsertQuestionForm(InsertController insert, MessegeApp message)
         {
             InitializeComponent();
+            this.insert = insert;
+            this.message = message;
             comboBox1.Items.Add("Лесно");
             comboBox1.Items.Add("Средно");
             comboBox1.Items.Add("Трудно");
@@ -26,8 +30,7 @@ namespace BecomeRich.Forms
         private void button1_Click(object sender, EventArgs e)
         {
 
-            InsertController insert = new InsertController();
-            MessegeApp message = new MessegeApp();
+           
             
             string qustion = textBox1.Text;
             string answearA ="A: " + textBox2.Text;
@@ -102,6 +105,11 @@ namespace BecomeRich.Forms
         
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

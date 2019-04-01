@@ -18,7 +18,7 @@ namespace BecomeRich.Forms
         private ReadController read ;
         private InsertController insert ;
         private InOutConsole inOut ;
-        private MessegeApp messege ;
+        private MessegeApp message ;
 
         public MainForm(BecomeRichContext context, ReadController read, InsertController insert, InOutConsole inOut, MessegeApp messege)
         {
@@ -27,7 +27,7 @@ namespace BecomeRich.Forms
             this.read = read;
             this.insert = insert;
             this.inOut = inOut;
-            this.messege = messege;
+            this.message = messege;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,27 +38,32 @@ namespace BecomeRich.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            InsertCountryForm form = new InsertCountryForm();
+            InsertCountryForm form = new InsertCountryForm(insert,message);
             form.Show();
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            InsertQuestionForm form = new InsertQuestionForm();
+            InsertQuestionForm form = new InsertQuestionForm(insert, message) ;
             form.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            InsertFriendForm form = new InsertFriendForm();
+            InsertFriendForm form = new InsertFriendForm(insert,message);
             form.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            InsertPlayerForm form = new InsertPlayerForm();
+            InsertPlayerForm form = new InsertPlayerForm(read,insert,message);
             form.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

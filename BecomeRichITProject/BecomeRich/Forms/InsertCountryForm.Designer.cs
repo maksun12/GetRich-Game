@@ -72,6 +72,7 @@
             this.Controls.Add(this.label1);
             this.Name = "InsertCountryForm";
             this.Text = "InsertCountryForm";
+            this.Load += new System.EventHandler(this.InsertCountryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

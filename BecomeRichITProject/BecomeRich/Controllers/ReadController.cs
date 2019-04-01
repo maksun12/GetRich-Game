@@ -33,5 +33,26 @@ namespace BecomeRich.Controllers
         {
             return context.Friends.OrderBy(f => f.Name).ToList();
         }
+        public Country FindCountry(string countryName)
+        {
+            Country find = context.Countries.FirstOrDefault(x => x.Name == countryName);
+            return find;
+        }
+
+        public Town FindTown(string countryName, string townName)
+        {
+            Country findCountry = FindCountry(countryName);
+            if (findCountry == null)
+            {
+                return null;
+            }
+            else
+            {
+                Town find = context.Towns.Where(x => x.Name == townName && x.Country.Name == countryName).FirstOrDefault();
+                return find;
+
+            }
+
+        }
     }
 }

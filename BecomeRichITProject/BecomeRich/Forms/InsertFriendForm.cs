@@ -14,10 +14,14 @@ namespace BecomeRich.Forms
 {
     public partial class InsertFriendForm : Form
     {
-        public InsertFriendForm()
+        private InsertController insert;
+        private MessegeApp message;
+        public InsertFriendForm(InsertController insert, MessegeApp messege)
         {
             InitializeComponent();
-            for (int i = 1; i < 101; i++)
+            this.insert = insert;
+            this.message = messege;
+            for (int i = 18; i < 81; i++)
             {
                 comboBox1.Items.Add(i);
             }
@@ -26,8 +30,8 @@ namespace BecomeRich.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessegeApp message = new MessegeApp();
-            InsertController insert = new InsertController();
+           
+          
             string name = textBox1.Text;
             string homeTown = textBox2.Text;
             string homeCountry = textBox3.Text;

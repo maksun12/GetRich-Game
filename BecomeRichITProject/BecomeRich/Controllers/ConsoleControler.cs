@@ -14,7 +14,7 @@ namespace BecomeRich.Controllers
     {
         public static BecomeRichContext context = new BecomeRichContext();
         public static ReadController read = new ReadController(context);
-        public static InsertController insert = new InsertController();
+        public static InsertController insert = new InsertController(context,read);
         public static InOutConsole inOut = new InOutConsole();
         public static MessegeApp messege = new MessegeApp();
         public static MenuConsole menu = new MenuConsole();
