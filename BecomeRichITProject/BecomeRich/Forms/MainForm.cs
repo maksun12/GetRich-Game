@@ -35,5 +35,30 @@ namespace BecomeRich.Forms
             PlayForm form = new PlayForm();
             form.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            InsertCountryForm form = new InsertCountryForm();
+            form.Show();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            InsertQuestionForm form = new InsertQuestionForm();
+            form.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            InsertFriendForm form = new InsertFriendForm();
+            form.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            InsertPlayerForm form = new InsertPlayerForm();
+            form.Show();
+        }
     }
 }
