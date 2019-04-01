@@ -14,8 +14,7 @@ namespace BecomeRich
     {
         static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.Run(new InsertPlayerForm());
+            ConsoleControler c = new ConsoleControler();
         }
     }
 }

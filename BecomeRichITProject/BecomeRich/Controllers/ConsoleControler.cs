@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using BecomeRich.Forms;
 
 namespace BecomeRich.Controllers
 {
@@ -31,6 +33,11 @@ namespace BecomeRich.Controllers
                     case "Play":
                         ConsolePlay play = new ConsolePlay();
                         break;
+                    case "MainForm":
+                        Application.EnableVisualStyles();
+                        Application.Run(new MainForm());
+                        break;
+
                     default: return;
                         //break;
 

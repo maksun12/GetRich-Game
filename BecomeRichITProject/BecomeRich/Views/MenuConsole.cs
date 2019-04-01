@@ -33,9 +33,11 @@ namespace BecomeRich.Views
             Console.WriteLine("Add - Добавяне на данни");
             Console.WriteLine("Read - Отпечатване на данни");
             Console.WriteLine("Play - Започни конзолна игра");
+            Console.WriteLine("MainForm - Стартирай графичен интерфейс");
             Console.Write("Избери команда: ");
             return Console.ReadLine();
         }
+        
 
     }
 }

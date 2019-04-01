@@ -46,7 +46,7 @@ namespace BecomeRich.Forms
             string name = textBox1.Text;
             string homeTown = textBox2.Text;
             string homeCountry = textBox3.Text;
-            int friendName = int.Parse(textBox4.Text);
+            int friendName = int.Parse(comboBox2.Text);
             int age = int.Parse(comboBox1.Text);
 
             bool isAdd = false;
@@ -64,7 +64,7 @@ namespace BecomeRich.Forms
                 textBox1.Text = string.Empty;
                 textBox2.Text = string.Empty;
                 textBox3.Text = string.Empty;
-                textBox4.Text = string.Empty;
+                comboBox2.Text = string.Empty;
                 comboBox1.Text = string.Empty;
             }
             else

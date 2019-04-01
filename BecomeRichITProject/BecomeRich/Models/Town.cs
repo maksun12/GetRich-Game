@@ -8,6 +8,7 @@ namespace BecomeRich
 
     public partial class Town
     {
+        private string name;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Town()
         {
