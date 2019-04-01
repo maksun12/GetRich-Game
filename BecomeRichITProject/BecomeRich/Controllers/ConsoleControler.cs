@@ -35,7 +35,7 @@ namespace BecomeRich.Controllers
                         break;
                     case "MainForm":
                         Application.EnableVisualStyles();
-                        Application.Run(new MainForm());
+                        Application.Run(new MainForm(context, read, insert, inOut, messege));
                         break;
 
                     default: return;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BecomeRich.Views
 {
-    class MessegeApp
+   public class MessegeApp
     {
         
         public string MessegeInsertCountryTrue(string countryName)

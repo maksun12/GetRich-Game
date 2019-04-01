@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BecomeRich.Views
 {
-    class InOutConsole
+    public class InOutConsole
     {
         public void Line(char c,int length)
         {

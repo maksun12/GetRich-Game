@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BecomeRich.Controllers
 {
-    class InsertController
+ public   class InsertController
     {
         private static BecomeRichContext context = new BecomeRichContext();
         private static Find find = new Find();

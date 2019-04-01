@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BecomeRich.Views
 {
-    class MenuConsole
+    public class MenuConsole
     {
         public string MenuInsert()
         {

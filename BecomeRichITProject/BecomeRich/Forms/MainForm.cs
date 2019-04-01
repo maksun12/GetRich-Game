@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BecomeRich.Controllers;
+using BecomeRich.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,20 @@ namespace BecomeRich.Forms
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private BecomeRichContext context ;
+        private ReadController read ;
+        private InsertController insert ;
+        private InOutConsole inOut ;
+        private MessegeApp messege ;
+
+        public MainForm(BecomeRichContext context, ReadController read, InsertController insert, InOutConsole inOut, MessegeApp messege)
         {
             InitializeComponent();
+            this.context = context;
+            this.read = read;
+            this.insert = insert;
+            this.inOut = inOut;
+            this.messege = messege;
         }
 
         private void button1_Click(object sender, EventArgs e)
