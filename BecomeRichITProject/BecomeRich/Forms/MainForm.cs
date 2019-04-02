@@ -114,6 +114,12 @@ namespace BecomeRich.Forms
         {
             label4.Text = "Списък с приятели:";
             listBox1.Items.Clear();
+            List<Friend> friends = read.FriendsList();
+            foreach (var f in friends)
+            {
+                string friendInfo = string.Format($"ID:{f.Id} -- Name:{f.Name} -- Age:{f.Age} -- HomeTown:{f.Town.Name}");
+                listBox1.Items.Add(friendInfo);
+            }
         }
     }
 }
