@@ -84,5 +84,17 @@ namespace BecomeRich.Forms
             }
            
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Списък с градове:";
+            listBox1.Items.Clear();
+            List<Town> towns = read.TownList();
+            foreach (var t in towns)
+            {
+                string townInfo = string.Format($"{t.Id} - {t.Name} - {t.Country.Name}");
+                listBox1.Items.Add(townInfo);
+            }
+        }
     }
 }

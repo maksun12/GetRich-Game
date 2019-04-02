@@ -40,6 +40,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -155,7 +156,7 @@
             // 
             this.button7.Location = new System.Drawing.Point(289, 214);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(158, 46);
+            this.button7.Size = new System.Drawing.Size(138, 46);
             this.button7.TabIndex = 10;
             this.button7.Text = "Списък с държави";
             this.button7.UseVisualStyleBackColor = true;
@@ -170,11 +171,22 @@
             this.label4.Size = new System.Drawing.Size(0, 27);
             this.label4.TabIndex = 11;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(290, 279);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(136, 46);
+            this.button8.TabIndex = 12;
+            this.button8.Text = "Списък с градове";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 599);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.listBox1);
@@ -210,5 +222,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button8;
     }
 }
