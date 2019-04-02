@@ -79,7 +79,7 @@ namespace BecomeRich.Forms
             List<Country> countries = read.CountriesList();
             foreach (var c in countries)
             {
-                string coutryInfo = string.Format($"{c.Id} - {c.Name}");
+                string coutryInfo = string.Format($"ID:{c.Id} -- Name:{c.Name}");
                 listBox1.Items.Add(coutryInfo);
             }
            
@@ -92,7 +92,7 @@ namespace BecomeRich.Forms
             List<Town> towns = read.TownList();
             foreach (var t in towns)
             {
-                string townInfo = string.Format($"{t.Id} - {t.Name} - {t.Country.Name}");
+                string townInfo = string.Format($"ID:{t.Id} -- TownName:{t.Name} -- CountryName:{t.Country.Name}");
                 listBox1.Items.Add(townInfo);
             }
         }
@@ -104,7 +104,7 @@ namespace BecomeRich.Forms
             List<Question> questions = read.QuestionList();
             foreach (var q in questions)
             {
-                string questionInfo = string.Format($"{q.Id} - {q.Question1} - {q.A} - {q.B} - {q.C} - {q.D} - {q.Answear}");
+                string questionInfo = string.Format($"ID:{q.Id} -- Question:{q.Question1} -- Answer:{q.A} -- Answer:{q.B} -- Answer:{q.C} -- Answer:{q.D} -- Correct Answer:{q.Answear}");
                 listBox1.Items.Add(questionInfo);
             }
         
