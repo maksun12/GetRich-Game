@@ -71,5 +71,18 @@ namespace BecomeRich.Forms
             InsertTownForm form = new InsertTownForm(insert, message);
             form.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Списък с държави:";
+            listBox1.Items.Clear();
+            List<Country> countries = read.CountriesList();
+            foreach (var c in countries)
+            {
+                string coutryInfo = string.Format($"{c.Id} - {c.Name}");
+                listBox1.Items.Add(coutryInfo);
+            }
+           
+        }
     }
 }
