@@ -213,6 +213,7 @@
             this.button11.TabIndex = 15;
             this.button11.Text = "Списък с играчи";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // MainForm
             // 

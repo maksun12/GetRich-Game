@@ -121,5 +121,17 @@ namespace BecomeRich.Forms
                 listBox1.Items.Add(friendInfo);
             }
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Списък с играчи:";
+            listBox1.Items.Clear();
+            List<Player> players = read.PlayerList();
+            foreach (var p in players)
+            {
+                string playerInfo = string.Format($"ID:{p.Id} -- Name:{p.Name} -- Age:{p.Age} -- HomeTown:{p.Town.Name} -- Friend:{p.Friend.Name}");
+                listBox1.Items.Add(playerInfo);
+            }
+        }
     }
 }
