@@ -96,5 +96,24 @@ namespace BecomeRich.Forms
                 listBox1.Items.Add(townInfo);
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Списък с въпроси:";
+            listBox1.Items.Clear();
+            List<Question> questions = read.QuestionList();
+            foreach (var q in questions)
+            {
+                string questionInfo = string.Format($"{q.Id} - {q.Question1} - {q.A} - {q.B} - {q.C} - {q.D} - {q.Answear}");
+                listBox1.Items.Add(questionInfo);
+            }
+        
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            label4.Text = "Списък с приятели:";
+            listBox1.Items.Clear();
+        }
     }
 }
