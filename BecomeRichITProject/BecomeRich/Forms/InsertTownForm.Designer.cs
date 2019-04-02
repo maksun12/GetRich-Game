@@ -49,7 +49,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(194, 109);
+            this.label2.Location = new System.Drawing.Point(189, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 27);
             this.label2.TabIndex = 1;
@@ -57,15 +57,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 65);
+            this.textBox1.Location = new System.Drawing.Point(184, 65);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 29);
+            this.textBox1.Size = new System.Drawing.Size(270, 29);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(184, 149);
+            this.textBox2.Location = new System.Drawing.Point(184, 147);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(270, 29);
@@ -74,7 +74,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(240, 203);
+            this.button1.Location = new System.Drawing.Point(238, 198);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 48);
             this.button1.TabIndex = 4;
