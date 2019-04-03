@@ -79,5 +79,15 @@ namespace BecomeRich.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vlcsnap_2018_03_27_13h24m17s150_277263_810x0 {
+            get {
+                object obj = ResourceManager.GetObject("vlcsnap-2018-03-27-13h24m17s150-277263-810x0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
