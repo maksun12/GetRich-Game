@@ -32,9 +32,11 @@ namespace BecomeRich.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Next();
             ChangeLabelProperty(i);
             button1.Visible = false;
+            
         }
 
         private void Next()
@@ -82,7 +84,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
-                        button1.Visible = true;
+                       
+                        
                         MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
@@ -97,7 +100,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
-                        button1.Visible = true;
+                        
+                        
                         MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
@@ -112,7 +116,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
-                        button1.Visible = true;
+                      
+                     
                         MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
@@ -127,7 +132,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
-                        button1.Visible = true;
+                       
+                       
                         MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
@@ -141,16 +147,20 @@ namespace BecomeRich.Forms
             radioButton2.Checked = false;
             radioButton3.Checked = false;
             radioButton4.Checked = false;
+            
         }
 
         private void StartStopGame(bool trueOrFalse)
         {
+            button1.Enabled = trueOrFalse;
             
             radioButton1.Enabled = trueOrFalse;
             radioButton2.Enabled = trueOrFalse;
             radioButton3.Enabled = trueOrFalse;
             radioButton4.Enabled = trueOrFalse;
         }
+     
+
 
         private void ChangeLabelProperty(int i)
         {
@@ -222,9 +232,11 @@ namespace BecomeRich.Forms
                     break;
                 case 5:
                     label5.ForeColor = Color.Orange;
+                    
                     break;
                 case 6:
                     label6.ForeColor = Color.Orange;
+                    MessageBox.Show("Поздравления Вие достигнахте до първата сигурна сума от 500лв.");
                     break;
                 case 7:
                     label7.ForeColor = Color.Orange;
@@ -237,9 +249,11 @@ namespace BecomeRich.Forms
                     break;
                 case 10:
                     label10.ForeColor = Color.Orange;
+                    MessageBox.Show("Поздравления Вие достигнахте до втората сигурна сума от 2 500лв.!");
                     break;
                 case 11:
                     label11.ForeColor = Color.Orange;
+                    MessageBox.Show("Поздравления Вие достигнахте до втората сигурна сума от 2 500лв.!");
                     break;
                 case 12:
                     label12.ForeColor = Color.Orange;
@@ -252,6 +266,11 @@ namespace BecomeRich.Forms
                     break;
                 case 15:
                     label15.ForeColor = Color.Orange;
+                   
+                    break;
+                case 16:
+                    MessageBox.Show("Честито Вие спечелихте 100 000лв.!");
+                    
                     break;
             }
         }
@@ -277,6 +296,11 @@ namespace BecomeRich.Forms
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
