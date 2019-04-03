@@ -34,6 +34,7 @@ namespace BecomeRich.Forms
         {
             Next();
             ChangeLabelProperty(i);
+            button1.Visible = false;
         }
 
         private void Next()
@@ -81,6 +82,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
+                        button1.Visible = true;
+                        MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
                 case "B":
@@ -94,6 +97,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
+                        button1.Visible = true;
+                        MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
                 case "C":
@@ -107,6 +112,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
+                        button1.Visible = true;
+                        MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
                 case "D":
@@ -120,6 +127,8 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
+                        button1.Visible = true;
+                        MessageBox.Show("Грешен отговор! Опитайте отново!");
                     }
                     break;
                     
@@ -136,7 +145,7 @@ namespace BecomeRich.Forms
 
         private void StartStopGame(bool trueOrFalse)
         {
-            button1.Enabled = trueOrFalse;
+            
             radioButton1.Enabled = trueOrFalse;
             radioButton2.Enabled = trueOrFalse;
             radioButton3.Enabled = trueOrFalse;
