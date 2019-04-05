@@ -24,7 +24,7 @@ namespace BecomeRich.Forms
             InitializeComponent();
             RadioCheckedFalse();
             button3.Visible = false;
-
+            StartStopGame3(false);
         }
         private void PlayForm_Load(object sender, EventArgs e)
         {
@@ -37,7 +37,8 @@ namespace BecomeRich.Forms
             Next();
             ChangeLabelProperty(i);
             button1.Visible = false;
-            
+            StartStopGame3(true);
+
         }
 
         private void Next()
@@ -151,6 +152,15 @@ namespace BecomeRich.Forms
             
         }
 
+        private void StartStopGame3(bool trueOrFalse)
+        {
+        
+            button2.Enabled = trueOrFalse;
+            radioButton1.Enabled = trueOrFalse;
+            radioButton2.Enabled = trueOrFalse;
+            radioButton3.Enabled = trueOrFalse;
+            radioButton4.Enabled = trueOrFalse;
+        }
         private void StartStopGame(bool trueOrFalse)
         {
             button1.Enabled = trueOrFalse;
@@ -348,7 +358,6 @@ namespace BecomeRich.Forms
         {
             StartStopGame2(true);
             button3.Visible = false;
-            label1.Enabled = true;
             Next();
         }
     }
