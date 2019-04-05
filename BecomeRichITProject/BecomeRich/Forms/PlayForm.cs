@@ -87,8 +87,19 @@ namespace BecomeRich.Forms
                     {
                         StartStopGame(false);
                         button3.Visible = true;
-                        
-                        MessageBox.Show("Грешен отговор! Опитайте отново!");
+                       MessageBox.Show("Грешен отговор!");
+                        if (i<=5)
+                        {
+                            MessageBox.Show("Спечелихте 0лв.");
+                        }
+                        else if  (i>5 && i<=10)
+                        {
+                            MessageBox.Show("Спечелихте 500лв.");
+                        }
+                        else if (i>10 && i<15)
+                        {
+                            MessageBox.Show("Спечелихте 2 500лв.");
+                        }
                     }
                     break;
                 case "B":
@@ -102,9 +113,20 @@ namespace BecomeRich.Forms
                     else
                     {
                         StartStopGame(false);
-
-                        button3.Visible = true;
-                        MessageBox.Show("Грешен отговор! Опитайте отново!");
+                       button3.Visible = true;
+                        MessageBox.Show("Грешен отговор!");
+                        if (i <= 5)
+                        {
+                            MessageBox.Show("Спечелихте 0лв.");
+                        }
+                        else if (i > 5 && i <= 10)
+                        {
+                            MessageBox.Show("Спечелихте 500лв.");
+                        }
+                        else if (i > 10 && i < 15)
+                        {
+                            MessageBox.Show("Спечелихте 2 500лв.");
+                        }
                     }
                     break;
                 case "C":
@@ -119,8 +141,19 @@ namespace BecomeRich.Forms
                     {
                         StartStopGame(false);
                         button3.Visible = true;
-
-                        MessageBox.Show("Грешен отговор! Опитайте отново!");
+                       MessageBox.Show("Грешен отговор!");
+                        if (i <= 5)
+                        {
+                            MessageBox.Show("Спечелихте 0лв.");
+                        }
+                        else if (i > 5 && i <= 10)
+                        {
+                            MessageBox.Show("Спечелихте 500лв.");
+                        }
+                        else if (i > 10 && i < 15)
+                        {
+                            MessageBox.Show("Спечелихте 2 500лв.");
+                        }
                     }
                     break;
                 case "D":
@@ -135,8 +168,19 @@ namespace BecomeRich.Forms
                     {
                         StartStopGame(false);
                         button3.Visible = true;
-
-                        MessageBox.Show("Грешен отговор! Опитайте отново!");
+                        MessageBox.Show("Грешен отговор!");
+                        if (i <= 5)
+                        {
+                            MessageBox.Show("Спечелихте 0лв.");
+                        }
+                        else if (i > 5 && i <= 10)
+                        {
+                            MessageBox.Show("Спечелихте 500лв.");
+                        }
+                        else if (i > 10 && i < 15)
+                        {
+                            MessageBox.Show("Спечелихте 2 500лв.");
+                        }
                     }
                     break;
                     
@@ -298,8 +342,7 @@ namespace BecomeRich.Forms
                     break;
                 case 10:
                     label10.ForeColor = Color.Orange;
-                    MessageBox.Show("Поздравления Вие достигнахте до втората сигурна сума от 2 500лв.!");
-                    break;
+                   break;
                 case 11:
                     label11.ForeColor = Color.Orange;
                     MessageBox.Show("Поздравления Вие достигнахте до втората сигурна сума от 2 500лв.!");
