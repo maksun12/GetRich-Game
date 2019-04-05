@@ -25,30 +25,15 @@ namespace BecomeRich
         }
         [Column("Question")]
         [StringLength(250)]
-        private string question1;
-        public string Question1
-        {
-            get{ return this.question1; }
-            set { this.question1 = value; }
-        }
-   
+        public string Question1 { get; set; }
+
 
         [StringLength(100)]
-        private string a;
-        public string A
-        {
-            get { return this.a; }
-            set { this.a = value; }
-        }
+        public string A{ get; set; }
        
 
         [StringLength(100)]
-        private string b;
-        public string B
-        {
-            get { return this.b; }
-            set { this.b = value; }
-        }
+        public string B { get; set; }
 
         [StringLength(100)]
         public string C { get; set; }
