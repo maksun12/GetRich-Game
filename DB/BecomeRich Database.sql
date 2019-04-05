@@ -1,13 +1,14 @@
-drop database BecomeRich;
 create database BecomeRich;
 
 use BecomeRich;
 
+--Създаване на таблица Category
 create table Category(
 Id int IDENTITY primary key,
 QuestionCategory int
 );
 
+--Създаване на таблица Questions
 create table Questions(
 Id int IDENTITY primary key,
 Question varchar(2500),
@@ -21,12 +22,10 @@ constraint fk_qustion_category
 foreign key (CategoryId)
 references Category(Id),);
 
-
-
---Създаване на таблица с име Countries
+--Създаване на таблица Countries
 create table Countries(
-Id int primary key identity, --колона Id тип цяло число, ключово поле, автоматично се увеличава при добавяне на нов запис
-Name varchar(50) unique -- колона Name, тип текст с дължина 50, уникални стойности
+Id int primary key identity,  
+Name varchar(50) unique 
 );
 go
 
@@ -35,11 +34,12 @@ create table Towns(
 Id int primary key identity,
 Name varchar(50),
 CountryId int not null,
-constraint fk_towns_countries  --ограничение с име fk_towns_countries
-foreign key (CountryId)   --външен ключ колона от текуща таблица CountryId
-references Countries (Id) --връзка към таблица Countries, колона Id
+constraint fk_towns_countries  
+foreign key (CountryId)   
+references Countries (Id) 
 );
 
+--Създаване на таблица Friend
 create table Friend(
 Id int IDENTITY primary key,
 Name varchar(30),
@@ -49,6 +49,7 @@ constraint fk_friend_towns
 foreign key (HomeTownId)
 references Towns(Id));
 
+--Създаване на таблица Player
 create table Player(
 Id int IDENTITY primary key,
 Name varchar(30),
@@ -61,7 +62,6 @@ FriendId int,
 constraint fk_players_towns
 foreign key (FriendId)
 references Friend(Id));
-
 
 --Добавяне на записи в таблица Countries
 insert into Countries(name) values 
@@ -88,6 +88,7 @@ insert into Countries(name) values
 ('Micronesia'),
 ('Faroe Islands');
 go
+
 --Добавяне на записи в таблица
 insert into Towns (Name, CountryId) values
 ('Pleven', 1),
@@ -130,11 +131,15 @@ insert into Towns (Name, CountryId) values
 ('Reading',6),
 ('London',6);
 go
+
+--Добавяне на записи в таблица Category
 insert into Category(QuestionCategory) values
 (1),
 (2),
 (3);
 go
+
+--Добавяне на записи в таблица Qustions
 insert into Questions(Question,A,B,C,D,Answear,CategoryId) values
 ('През коя година е създадена България?','A: 700','"B: 618','C: 681','D: 630','C: 681',1),
 ('През коя година е създаден ФК "Левски"?','A: 1912','B: 1948','C: 1913','D: 1914','D: 1914',1),
@@ -171,8 +176,9 @@ insert into Questions(Question,A,B,C,D,Answear,CategoryId) values
 ('След кой от филмите в които участва в Брад Пит е обявен за persona поп grata в Китай?' , 'A: Боен клуб ' , 'B: Седем години в Тибет' , 'C: Bавилон' , 'D: 12 години в робство' , 'B: Седем години в Тибет' , 3), 
 ('Как продължава надписът от фланелка на Кийт Ричардс "Кой по дяволите е ..."' , 'A: Джон Ленън' , 'B: Принц Чарлс' , 'C: Мик Джагър' , 'D:Исус Христос' , 'C: Мик Джагър' ,3 ), 
 ('В кое свое стихотворение Ботев пише: "ще умре един от нас – ил мъжът ти, ил аз"?','A: "Делба"', 'B: "Ней"', 'C: "На прощаване"','D: "В механата"','B:"Ней"', 3);
-
 go
+
+--Добавяне на записи в таблица Friend
 insert into Friend(Name,Age,HomeTownId) values
 ('Петър Петров',29,3),
 ('Георги Иванов',22,1),
@@ -186,10 +192,9 @@ insert into Friend(Name,Age,HomeTownId) values
 ('Александра Василева',22,9),
 ('Ангел Иванов', 45,7),
 ('Йордан Радичев',32,8);
-
 go
 
-
+--Добавяне на още записи в таблица Qustions
 insert into Questions(Question,A,B,C,D,Answear,CategoryId) values
 ('Кой спечели най-ценната индивидуална награда във футбола "Златна топка" за 2018г.?','А: Лука Модрич', 'B: Лионел Меси', 'C: Хари Кейн', 'D: Кристиано Роналдо', 'A: Лука Модрич', 2),
 ('Другото име на коя игра на карти е 66?', 'А: Сантасе', 'B: Белот', 'C: Канаста', 'D: Вист ', 'A: Сантасе', 2),
@@ -216,6 +221,9 @@ insert into Questions(Question,A,B,C,D,Answear,CategoryId) values
 ('Кое от следните може да се измери в радиани?','A: Извършване на работа','B: Температура','C: Равнинен ъгъл','D: Сила на тока','C: Равнинен ъгъл',3),
 ('Коя дума в съвременния български език произлиза от френската дума за "момче"?','A: Гараж','B: Драже','C: Тоалет','D: Гарсониера','D: Гарсониера',3),
 ('Река Дунав тече през териториите на десет европейски държави. Коя не е една от тях? ','A: Хърватия','B: Чехия','C: Словакия','D: Сърбия','B: Чехия ',2);
+go
+ 
+ --Добавяне на записи в таблица Player
  insert into Player(Name,Age,HomeTownId,FriendId) values
  ('Виктория Таянджиева',18,1,3), 
  ('Ани Хаджиасанова',17,5,1),
