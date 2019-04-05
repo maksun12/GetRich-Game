@@ -52,6 +52,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -302,6 +303,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "50";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(27, 108);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(105, 48);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Започни нова игра";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // PlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +320,7 @@
             this.BackgroundImage = global::BecomeRich.Properties.Resources.vlcsnap_2018_03_27_13h24m17s150_277263_810x0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(714, 560);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
@@ -352,5 +364,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
     }
 }
