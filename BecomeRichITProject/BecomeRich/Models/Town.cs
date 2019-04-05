@@ -8,7 +8,8 @@ namespace BecomeRich
 
     public partial class Town
     {
-        private string name;
+        
+     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Town()
         {
@@ -19,7 +20,12 @@ namespace BecomeRich
         public int Id { get; set; }
 
         [StringLength(50)]
-        public string Name { get; set; }
+        private string name;
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
 
         public int CountryId { get; set; }
 
