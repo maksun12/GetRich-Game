@@ -34,7 +34,13 @@ namespace BecomeRich
    
 
         [StringLength(100)]
-        public string A { get; set; }
+        private string a;
+        public string A
+        {
+            get { return this.a; }
+            set { this.a = value; }
+        }
+       
 
         [StringLength(100)]
         public string B { get; set; }
