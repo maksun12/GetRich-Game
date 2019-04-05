@@ -25,7 +25,13 @@ namespace BecomeRich
         }
         [Column("Question")]
         [StringLength(250)]
-        public string Question1 { get; set; }
+        private string question1;
+        public string Question1
+        {
+            get{ return this.question1; }
+            set { this.question1 = value; }
+        }
+   
 
         [StringLength(100)]
         public string A { get; set; }
