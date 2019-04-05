@@ -168,6 +168,35 @@ namespace BecomeRich.Forms
             radioButton2.Enabled = trueOrFalse;
             radioButton3.Enabled = trueOrFalse;
             radioButton4.Enabled = trueOrFalse;
+            label1.Enabled = true;
+            label2.Enabled = true;
+            label3.Enabled = true;
+            label4.Enabled = true;
+            label5.Enabled = true;
+            label6.Enabled = true;
+            label7.Enabled = true;
+            label8.Enabled = true;
+            label9.Enabled = true;
+            label10.Enabled = true;
+            label11.Enabled = true;
+            label12.Enabled = true;
+            label13.Enabled = true;
+            label14.Enabled = true;
+            label15.Enabled = true;
+            label2.ForeColor = SystemColors.ControlText;
+            label3.ForeColor = SystemColors.ControlText;
+            label4.ForeColor = SystemColors.ControlText;
+            label5.ForeColor = SystemColors.ControlText;
+            label6.ForeColor = SystemColors.ControlText;
+            label7.ForeColor = SystemColors.ControlText;
+            label8.ForeColor = SystemColors.ControlText;
+            label9.ForeColor = SystemColors.ControlText;
+            label10.ForeColor = SystemColors.ControlText;
+            label11.ForeColor = SystemColors.ControlText;
+            label12.ForeColor = SystemColors.ControlText;
+            label13.ForeColor = SystemColors.ControlText;
+            label14.ForeColor = SystemColors.ControlText;
+            label15.ForeColor = SystemColors.ControlText;
         }
 
 
@@ -320,6 +349,7 @@ namespace BecomeRich.Forms
             StartStopGame2(true);
             button3.Visible = false;
             label1.Enabled = true;
+            Next();
         }
     }
 }
