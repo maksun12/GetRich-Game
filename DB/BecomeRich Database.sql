@@ -1,5 +1,7 @@
+--Създаване на нова база от данни BecomeRich
 create database BecomeRich;
 
+--Използване на база от данни BecomeRich
 use BecomeRich;
 
 --Създаване на таблица Category
