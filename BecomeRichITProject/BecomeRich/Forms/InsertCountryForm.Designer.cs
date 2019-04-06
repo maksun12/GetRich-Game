@@ -48,7 +48,7 @@
             this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(212, 191);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 35);
+            this.button1.Size = new System.Drawing.Size(128, 52);
             this.button1.TabIndex = 1;
             this.button1.Text = "Добави";
             this.button1.UseVisualStyleBackColor = true;
